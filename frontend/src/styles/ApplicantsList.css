@@ -1,0 +1,25 @@
+.ApplicantsList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 10px;
+}
+
+.ApplicantCard {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.ApplicantCard p {
+    margin: 4px 0;
+}
+
+.ApplicantPhoto {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 8px;
+}

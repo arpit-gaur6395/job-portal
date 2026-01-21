@@ -1,0 +1,91 @@
+.ApplyModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.ApplyForm {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.ApplyForm h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ApplyForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ApplyForm input[type="text"],
+.ApplyForm input[type="email"],
+.ApplyForm input[type="file"] {
+  width: 92%;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.ApplyForm label {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.ApplyButtons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.ApplyButtons button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  background: #2563eb;
+  color: white;
+  transition: background 0.3s;
+}
+
+.ApplyButtons button:hover {
+  background: #1e40af;
+}
+
+.ApplyButtons button[type="button"] {
+  background: #dc2626;
+}
+
+.ApplyButtons button[type="button"]:hover {
+  background: #b91c1c;
+}
+
+@media screen and (max-width: 500px) {
+  .ApplyForm {
+    padding: 20px 15px;
+  }
+
+  .ApplyButtons {
+    flex-direction: column;
+  }
+
+  .ApplyButtons button {
+    width: 100%;
+  }
+}

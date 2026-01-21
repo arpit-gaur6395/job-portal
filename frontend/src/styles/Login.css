@@ -1,0 +1,71 @@
+.mainDivLogin {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    min-height: 80vh;
+    width: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.LoginForm {
+    text-align: center;
+    background-color: rgb(41, 40, 39);
+    width: 100%;
+    max-width: 800px;
+    min-width: 250px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding-bottom: 70px;
+    margin-top: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.LoginFormLabel {
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.LoginFormInput:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.LoginFormInput {
+    margin-top: 20px;
+    width: 75%;
+    height: 35px;
+    border: 0px solid black;
+    border-radius: 50px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    background-color: rgb(240, 230, 140);
+}
+
+.LoginFormButton {
+    width: 45%;
+    padding: 2px 0;
+    margin: 30px auto 0 auto;
+    display: block;
+    border-radius: 50px;
+    border: 0px solid black;
+    font-weight: 800;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: rgb(240, 230, 140);
+    color: rgb(0, 0, 0);
+}
+
+.LoginFormButton:hover {
+    background-color: rgb(255, 117, 4);
+    color: rgb(255, 255, 255);
+}

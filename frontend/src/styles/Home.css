@@ -1,0 +1,209 @@
+.HomePage {
+    width: 100%;
+    min-height: 100vh;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0px;
+    box-sizing: border-box;
+}
+
+.HeroSection {
+    width: 100%;
+    background: linear-gradient(to right, #2563eb, #1e3a8a);
+    color: white;
+    padding: 50px 0px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.HeroSection h1 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.HeroSection p {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.SearchBar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.SearchBar input {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 8px;
+    min-width: 100px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.SearchBar button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #ffcc00;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.SearchBar button:hover {
+    background: #e6b800;
+}
+
+.JobSection {
+    width: 100%;
+    padding: 5px 5px;
+}
+
+.JobSection h2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2537ac;
+}
+
+.NoJobs {
+    text-align: center;
+    font-size: 18px;
+    color: #6b7280;
+}
+
+.JobGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.JobCard {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 0px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease-in-out;
+    border: 1px solid #000000;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 30px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.JobCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.JobCard h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #274493;
+}
+
+.JobCard p {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #000000;
+}
+
+.JobCardButtons {
+    margin-top: 10px;
+    display: block;
+    gap: 10px;
+}
+
+.JobCardButton {
+    flex: 1;
+    padding: 8px;
+    max-width: 170px;
+    min-width: 100px;
+    border-radius: 6px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    background: #2563eb;
+    color: white;
+    transition: background 0.3s;
+    margin: 10px;
+
+}
+
+.JobCardButton:hover {
+    background: #1e40af;
+}
+
+.JobCardButton.Delete {
+    background: #dc2626;
+}
+
+.JobCardButton.Delete:hover {
+    background: #b91c1c;
+}
+
+@media screen and (max-width: 600px) {
+    .HeroSection h1 {
+        font-size: 24px;
+    }
+
+    .HeroSection p {
+        font-size: 14px;
+    }
+
+    .SearchBar {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .SearchBar input {
+        width: 80%;
+    }
+
+    .SearchBar button {
+        width: 50%;
+    }
+
+    .JobCard {
+        padding: 15px;
+    }
+
+    .JobCard h3 {
+        font-size: 18px;
+    }
+
+    .JobCard p {
+        font-size: 20px;
+    }
+
+    .JobCardButtons {
+        flex-direction: column;
+    }
+
+    .JobCardButton {
+        width: 100%;
+    }
+
+    .Navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Navbar a {
+        margin: 5px 0;
+    }
+}

@@ -1,0 +1,153 @@
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f6c500;
+    height: 60px;
+    padding: 0 20px;
+    font-family: Arial, sans-serif;
+    color: white;
+    box-shadow: 0 2px 5px rgba(132, 125, 204, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border: 0px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.Logo {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    text-decoration: none;
+}
+
+.LogoImage {
+    width: 80px;
+    height: 29px;
+    object-fit: cover;
+    border-radius:0%;
+    border: 0px solid #fff;
+}
+
+.LogoText {
+    font-size: 20px;
+    font-weight: 800;
+    color: #000000;
+}
+
+.Navbar a {
+    color: #000000;
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: 700;
+    transition: color 0.2s ease;
+    font-size: large;
+}
+
+.Navbar a:hover {
+    color: #ffffff;
+}
+
+.Navbar button {
+    background-color: #f0e68c;
+    color: #46392b;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.Navbar button:hover {
+    background-color: #e6d85a;
+}
+
+
+.NavbarLeft,
+.NavbarRight {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.Hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.Hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    transition: all 0.3s ease;
+}
+
+.Hamburger.open .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.Hamburger.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.Hamburger.open .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+
+@media (max-width: 600px) {
+    .Navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        padding: 0 15px;
+    }
+
+    .Hamburger {
+        display: flex;
+    }
+
+    .NavbarRight {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #ffffff;
+        flex-direction: column;
+        width: 200px;
+        padding: 10px;
+        border-left: 2px solid #f0e68c;
+        gap: 10px;
+        box-shadow: -2px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .NavbarRight.active {
+        display: flex;
+    }
+
+    .NavbarRight a,
+    .NavbarRight button {
+        width: 100%;
+        text-align: left;
+    }
+
+    .NavbarLeft {
+        gap: 10px;
+        z-index: 1001;
+    }
+
+    .LogoImage {
+        width: 50px;
+        height: 32px;
+    }
+
+    .LogoText {
+        font-size: 20px;
+    }
+}
