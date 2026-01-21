@@ -6,7 +6,7 @@ import ApplyJob from './pages/ApplyJob'
 import Register from './pages/Register'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import { AuthProvider } from "./context/AuthContext";
+import { AuthProvider } from "./context/authContext";
 import Postjob from './pages/Postjob';
 function App() {
   const [count, setCount] = useState(0)
