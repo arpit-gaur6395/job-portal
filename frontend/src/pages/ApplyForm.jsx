@@ -1,5 +1,5 @@
 import { useState, useContext } from "react";
-import { AuthContext } from "../context/AuthContext";
+import { AuthContext } from "../context/authContext";
 import axios from "axios";
 import "../styles/ApplyForm.css";
 
@@ -94,3 +94,4 @@ export default function ApplyForm({ job, onClose }) {
         </div>
     );
 }
+
